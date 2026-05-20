@@ -19,3 +19,5 @@ Then visit `http://localhost:8000`.
 ## Notes
 - The location section includes a Google Maps embed for the store coordinates.
 - The design is optimized for desktop and mobile screens.
+
+>>>>>>> 65ea9776358137ecd321460461a0017da1ee3b57
