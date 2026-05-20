@@ -386,4 +386,83 @@ iframe {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+}/* STEP 3: SMOOTH SCROLLING & MENU CARDS */
+html {
+    scroll-behavior: smooth;
+}
+
+.menu-section {
+    padding: 80px 20px;
+    background-color: #0f172a; /* Sleek dark background matching your theme */
+    color: #ffffff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    color: #94a3b8;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+/* CSS Grid for side-by-side card layout */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background: #1e293b;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    border: 1px solid #334155;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.menu-img-placeholder {
+    height: 200px;
+    background: #334155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.menu-info {
+    padding: 25px;
+}
+
+.menu-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #f8fafc;
+}
+
+.price {
+    display: inline-block;
+    color: #38bdf8; /* Vibrant cyan price highlight */
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.menu-info p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
